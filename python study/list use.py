@@ -9,6 +9,7 @@ m=len(classmates)
 while m>0:
     m-=1
     print('This is a good day,'+classmates[m])
+#对列表进行修改
 classmates.append('Whitch')
 classmates.insert(0,'Pike')
 classmates.pop(2)
