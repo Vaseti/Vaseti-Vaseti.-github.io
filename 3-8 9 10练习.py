@@ -1,0 +1,13 @@
+plant=['England','Pale','Asia','Shanghai']
+print(sorted(plant))
+print(plant)
+print(sorted(plant,reverse=True))
+print(plant)
+plant.reverse()
+print(plant)
+plant.reverse()
+print(plant)
+plant.sort()
+print(plant)
+plant.sort(reverse=True)
+print(plant)
