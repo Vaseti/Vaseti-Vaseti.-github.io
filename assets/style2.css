@@ -89,9 +89,21 @@ h1 {
 }
 
 /* 返回首页按钮样式 */
+nav {
+    position: fixed;
+    /* 固定位置 */
+    bottom: 20px;
+    /* 距离底部20px */
+    left: 50%;
+    /* 水平居中 */
+    transform: translateX(-50%);
+    /* 精确居中 */
+    z-index: 10;
+    /* 确保按钮位于最上层 */
+}
+
 nav a {
     display: inline-block;
-    margin-top: 20px;
     text-decoration: none;
     background-color: #333;
     color: white;
@@ -99,6 +111,7 @@ nav a {
     border-radius: 5px;
     text-align: center;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
