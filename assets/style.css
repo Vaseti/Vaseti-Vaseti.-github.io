@@ -1,17 +1,107 @@
+/* 页面基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 页头 */
+h1 {
+    font-size: 2.5rem;
+    color: #2a2a2a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* 段落 */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 导航栏样式 */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-    margin-right: 10px;
     text-decoration: none;
-    color: #007acc;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
+    background-color: #6c63ff;
+    border-radius: 5px;
+}
+
+/* 主体内容部分 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+/* 链接部分 */
+a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
     text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
 }
