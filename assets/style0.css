@@ -1,8 +1,8 @@
 /* 全局设置 */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    /* 背景色 */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    /* 浅灰色背景 */
     margin: 0;
     padding: 0;
     color: #333;
@@ -11,15 +11,15 @@ body {
 /* 页头样式 */
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #333;
     font-size: 2.5em;
     margin-top: 40px;
 }
 
 h2 {
-    color: #2980b9;
-    font-size: 2em;
-    margin-top: 30px;
+    color: #555;
+    font-size: 1.8em;
+    margin-top: 20px;
 }
 
 /* 页面主体内容 */
@@ -30,28 +30,24 @@ p {
     width: 80%;
     max-width: 800px;
     text-align: justify;
+    /* 两端对齐 */
 }
 
-/* 列表样式 */
-ul {
-    list-style-type: none;
-    padding-left: 0;
+/* 图片容器 */
+.image-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #2980b9;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: #1abc9c;
-    /* 鼠标悬停时变色 */
+img {
+    width: 100%;
+    max-width: 400px;
+    /* 控制图片最大宽度 */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 加阴影效果 */
 }
 
 /* 导航栏样式 */
@@ -64,7 +60,7 @@ nav a {
     text-decoration: none;
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     margin: 0 10px;
     font-size: 1.2em;
@@ -85,11 +81,7 @@ nav a:hover {
         font-size: 1.2em;
     }
 
-    ul li a {
-        font-size: 1.1em;
-    }
-
-    nav a {
-        font-size: 1em;
+    img {
+        max-width: 100%;
     }
 }
