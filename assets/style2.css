@@ -1,0 +1,73 @@
+/* 设置基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.timeline {
+    position: relative;
+    margin: 30px;
+    padding-left: 50px;
+    /* 留出时间轴位置 */
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -60px;
+    /* 时间点的偏移量 */
+    top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    /* 内容区偏移量 */
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 添加时间线背景线 */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ddd;
+}
