@@ -13,18 +13,22 @@ h1 {
     color: white;
 }
 
+/* 时间线容器 */
 .timeline {
     position: relative;
-    margin: 30px;
+    margin: 30px auto;
     padding-left: 50px;
-    /* 留出时间轴位置 */
+    max-width: 800px;
+    width: 100%;
 }
 
+/* 时间线项目 */
 .timeline-item {
     margin-bottom: 40px;
     position: relative;
 }
 
+/* 时间点样式 */
 .timeline-date {
     position: absolute;
     left: -60px;
@@ -41,6 +45,7 @@ h1 {
     text-align: center;
 }
 
+/* 时间线内容区 */
 .timeline-content {
     background-color: #fff;
     padding: 20px;
@@ -51,17 +56,19 @@ h1 {
     /* 内容区偏移量 */
 }
 
+/* 时间线标题 */
 .timeline-content h3 {
     margin-top: 0;
     color: #333;
 }
 
+/* 时间线文本内容 */
 .timeline-content p {
     font-size: 16px;
     color: #666;
 }
 
-/* 添加时间线背景线 */
+/* 时间线背景线 */
 .timeline::before {
     content: '';
     position: absolute;
@@ -70,4 +77,45 @@ h1 {
     bottom: 0;
     width: 2px;
     background-color: #ddd;
+}
+
+/* 图片样式 */
+.timeline-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 返回首页按钮样式 */
+nav a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* 响应式设计，适配手机 */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-date {
+        left: -50px;
+    }
+
+    .timeline-content {
+        margin-left: 30px;
+    }
 }
