@@ -1,87 +1,100 @@
-/* 全局设置 */
+/* 设置基本样式 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    /* 浅灰色背景 */
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
 /* 页头样式 */
 h1 {
     text-align: center;
-    color: #333;
-    font-size: 2.5em;
-    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
-h2 {
-    color: #555;
-    font-size: 1.8em;
-    margin-top: 20px;
-}
-
-/* 页面主体内容 */
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin: 20px auto;
+/* 小标题和内容的容器 */
+.container {
     width: 80%;
-    max-width: 800px;
-    text-align: justify;
-    /* 两端对齐 */
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
-/* 图片容器 */
-.image-container {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+/* 小标题样式 */
+.container h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.6em;
 }
 
-img {
-    width: 100%;
-    max-width: 400px;
-    /* 控制图片最大宽度 */
+/* 内容文本样式 */
+.container p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 图片样式 */
+.container img {
+    max-width: 100%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* 加阴影效果 */
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 导航栏样式 */
+/* 返回首页按钮样式 */
 nav {
-    margin-top: 40px;
-    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 nav a {
+    display: inline-block;
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     padding: 10px 20px;
-    border-radius: 20px;
-    margin: 0 10px;
-    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #45a049;
+    background-color: #555;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
     body {
-        margin: 0 20px;
+        margin: 0 10px;
     }
 
-    p {
-        font-size: 1.2em;
+    .container {
+        padding: 15px;
     }
 
-    img {
-        max-width: 100%;
+    .container h2 {
+        font-size: 1.4em;
+    }
+
+    .container p {
+        font-size: 1.1em;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }

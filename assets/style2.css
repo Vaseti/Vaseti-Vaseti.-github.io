@@ -122,13 +122,32 @@ nav a:hover {
 @media (max-width: 768px) {
     .timeline {
         padding-left: 20px;
+        width: 100%;
+        /* 使时间线容器宽度充满屏幕 */
     }
 
     .timeline-date {
-        left: -50px;
+        left: -40px;
+        /* 调整时间点位置 */
     }
 
     .timeline-content {
-        margin-left: 30px;
+        margin-left: 20px;
+        /* 减少时间线内容区的左边距 */
+        padding: 15px;
+        /* 减少内容区的内边距 */
+    }
+
+    h1 {
+        font-size: 18px;
+        /* 在小屏设备上减小标题文字大小 */
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        /* 减小按钮字体大小，适应手机屏幕 */
+        padding: 8px 16px;
+        /* 调整按钮大小 */
     }
 }
